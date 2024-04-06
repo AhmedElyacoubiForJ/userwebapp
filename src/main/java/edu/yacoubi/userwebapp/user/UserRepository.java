@@ -1,2 +1,6 @@
-package edu.yacoubi.userwebapp.user;public interface UserRepository {
+package edu.yacoubi.userwebapp.user;
+
+import org.springframework.data.repository.CrudRepository;
+
+public interface UserRepository extends CrudRepository<User, Long> {
 }
